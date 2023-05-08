@@ -14,5 +14,23 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $eroi = [
+        "Kaidan Alenko;",
+        "Tali'Zorah nar Rayya;",
+        "Garrus Vakarian;",
+        "Urdnot Wrex;",
+        "Liara T'Soni;",
+        "Miranda Lawson;",
+        "Jacob Taylor;",
+        "Jack;",
+        "Samara;",
+        "Zaeed Massani;",
+        "Urdnot Grunt;",
+        "Mordin Solus;",
+        "Thane Krios;",
+        "Legion;",
+        "James Vega;",
+        "Javik.",
+    ];
+    return view('paginona', compact('eroi'));
 });
